@@ -1,0 +1,18 @@
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# torch==2.0.1 
+# torchvision==0.15.2 
+numpy
+opencv-python
+pillow
+diffusers==0.24.0 
+transformers
+accelerate
+matplotlib
+tqdm
+# gradio==4.16.0
+scipy
+onnxruntime
+scikit-image
+
+# RuntimeError: Ninja is required to load C++ extensions
+Ninja
