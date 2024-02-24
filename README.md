@@ -1,6 +1,8 @@
 # ComfyUI_OOTDiffusion_CXH
 OOTDiffusion
 
+安装教程:https://www.bilibili.com/video/BV1ew4m1f7bb/
+
 T-shir:
 ![89f4a5c276cfd72f39e927431f82d69](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/34b67ac4-4e13-469d-a197-9f5a7c4d9394)
 
