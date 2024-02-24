@@ -1,6 +1,6 @@
 import pdb
 
-import config
+# import config
 from pathlib import Path
 import sys
 
@@ -9,7 +9,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 import os
 
 import cv2
-import einops
+# import einops
 import numpy as np
 import random
 import time
