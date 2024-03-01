@@ -15,7 +15,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
-from modules import InPlaceABNSync
+from modules_ import InPlaceABNSync
 
 
 class ASPPModule(nn.Module):
