@@ -15,7 +15,7 @@ import torch.nn as nn
 import math
 import functools
 
-from modules_ import InPlaceABN, InPlaceABNSync
+from modules import InPlaceABN, InPlaceABNSync
 
 BatchNorm2d = functools.partial(InPlaceABNSync, activation='none')
 

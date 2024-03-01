@@ -16,7 +16,7 @@ import torch.nn as nn
 import math
 from torch.utils.model_zoo import load_url
 
-from modules_ import InPlaceABNSync
+from modules import InPlaceABNSync
 
 BatchNorm2d = functools.partial(InPlaceABNSync, activation='none')
 

@@ -18,7 +18,7 @@ import torch.nn as nn
 from torch.autograd import Variable
 from torch.nn import functional as F
 
-from modules_ import InPlaceABNSync
+from modules import InPlaceABNSync
 BatchNorm2d = functools.partial(InPlaceABNSync, activation='none')
 
 
