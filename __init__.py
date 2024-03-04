@@ -1,6 +1,6 @@
-from .OodGenerater import Ood_hd_CXH 
+from .OodGenerater import Ood_CXH 
 
 NODE_CLASS_MAPPINGS = {
-    "Ood_hd_CXH": Ood_hd_CXH,
-    "Ood_hd_CXH": Ood_hd_CXH,
+    "Ood_CXH": Ood_CXH,
+    "Ood_CXH": Ood_CXH,
 }

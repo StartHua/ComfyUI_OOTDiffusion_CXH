@@ -24,10 +24,20 @@ import torch.nn.functional as F
 from transformers import AutoProcessor, CLIPVisionModelWithProjection
 from transformers import CLIPTextModel, CLIPTokenizer
 
-VIT_PATH = "../checkpoints/clip-vit-large-patch14"
-VAE_PATH = "../checkpoints/ootd"
-UNET_PATH = "../checkpoints/ootd/ootd_dc/checkpoint-36000"
-MODEL_PATH = "../checkpoints/ootd"
+# VIT_PATH = "../checkpoints/clip-vit-large-patch14"
+# VAE_PATH = "../checkpoints/ootd"
+# UNET_PATH = "../checkpoints/ootd/ootd_dc/checkpoint-36000"
+# MODEL_PATH = "../checkpoints/ootd"
+
+# checkpoint路径
+import folder_paths
+comfy_path = os.path.dirname(folder_paths.__file__)
+custom_nodes_path = os.path.join(comfy_path, "custom_nodes","ComfyUI_OOTDiffusion_CXH","checkpoints")
+
+VIT_PATH =os.path.join(custom_nodes_path,"clip-vit-large-patch14") #"../checkpoints/clip-vit-large-patch14"
+VAE_PATH = os.path.join(custom_nodes_path,"ootd") #"../checkpoints/ootd"
+UNET_PATH = os.path.join(custom_nodes_path,"ootd/ootd_dc/checkpoint-36000") #"../checkpoints/ootd/ootd_hd/checkpoint-36000"
+MODEL_PATH = os.path.join(custom_nodes_path,"ootd") #"../checkpoints/ootd"
 
 class OOTDiffusionDC:
 

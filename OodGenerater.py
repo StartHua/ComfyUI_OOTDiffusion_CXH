@@ -12,20 +12,21 @@ from .utils_ootd import get_mask_location
 cude_type = 0
 openpose_model_hd = OpenPose(cude_type)
 parsing_model_hd = Parsing(cude_type)
-ootd_model_hd = OOTDiffusionHD(cude_type)
+
 
 def tensor2pil(image):
     return Image.fromarray(np.clip(255. * image.cpu().numpy().squeeze(), 0, 255).astype(np.uint8))
 
 category_dict_utils = ['upper_body', 'lower_body', 'dresses']
 
-class Ood_hd_CXH:
+class Ood_CXH:
     @classmethod
     def INPUT_TYPES(cls):
         return {
             "required": {
                 "cloth_image": ("IMAGE",),
                 "model_image": ("IMAGE",),
+                "model_type":(["hd","dc"],{"default":"hd"} ),
                 "category":   (["upperbody","lowerbody","dress"],{"default":"upperbody"} ),
                 "steps": ("INT", {"default": 20, "min": 20, "max": 40, "step": 1}),
                 "scale": ("FLOAT", {"default":2, "min": 1, "max": 5, "step":0.1}),
@@ -39,9 +40,11 @@ class Ood_hd_CXH:
 
     CATEGORY = "CXH"
 
-    def generate(self, cloth_image, model_image,category,steps,scale,seed):
-
-        model_type = 'hd'
+    def generate(self, cloth_image, model_image,model_type,category,steps,scale,seed):
+        
+       
+        
+        model_type = model_type
         garm_img = tensor2pil(cloth_image)
         garm_img = garm_img.resize((768, 1024))
         
@@ -63,7 +66,13 @@ class Ood_hd_CXH:
         
         masked_vton_img = Image.composite(mask_gray, vton_img, mask)
         
-        images = ootd_model_hd(
+        ootd_mode = None
+        if model_type =="hd":
+            ootd_mode = OOTDiffusionHD(cude_type)
+        else:
+            ootd_mode = OOTDiffusionDC(cude_type)
+        
+        images = ootd_mode(
             model_type=model_type,
             category=category,
             image_garm=garm_img,
