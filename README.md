@@ -1,16 +1,23 @@
 # ComfyUI_OOTDiffusion_CXH
 OOTDiffusion
+支持hd + dc
 
 安装教程:https://www.bilibili.com/video/BV1ew4m1f7bb/
 
+模型位置：
+![e2a8fbac2a5cd832f369ccd029f254a](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/96e3a676-1e62-4eba-bcd9-c8893f938600)
+
+
 T-shir:
-![89f4a5c276cfd72f39e927431f82d69](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/34b67ac4-4e13-469d-a197-9f5a7c4d9394)
+![470d3d1499d9b9ad571c3881f03a020](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/02680773-6086-42d3-ba31-d507dffbbde4)
+
 
 dress:
+![3f1f4ee6c85f59f04e320cbdafe2af6](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/719c4c19-5745-4431-b7f7-2fd847fbf8ad)
 
-![7d52c09c5ad5582b5debe1638318f18](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/49bcae56-bfbf-4b44-bafb-203b2a0f1918)
 
 low:
-![70ab79007368cc098a9a2271583d532](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/e6d54a05-0ac0-4516-8fdc-fdae19ac71e2)
+![030ac69e80da49df979c457da125aa6](https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH/assets/22284244/84f21e09-0d83-470a-a0cb-bb104b4594eb)
+
 
 
