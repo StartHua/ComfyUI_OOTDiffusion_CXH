@@ -1,5 +1,8 @@
 # ComfyUI_OOTDiffusion_CXH
 OOTDiffusion
+
+已解决：ComfyUI_UltimateSDUpscale 放大节点冲突 
+
 支持hd + dc
 
 安装教程:https://www.bilibili.com/video/BV1ew4m1f7bb/
