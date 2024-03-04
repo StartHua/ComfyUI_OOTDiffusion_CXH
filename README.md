@@ -5,6 +5,10 @@ OOTDiffusion
 
 支持hd + dc
 
+hd:上身比较好
+
+dc:主要是裤子+裙子效果好
+
 安装教程:https://www.bilibili.com/video/BV1ew4m1f7bb/
 
 模型位置：
