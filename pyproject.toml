@@ -1,0 +1,15 @@
+[project]
+name = "comfyui_ootdiffusion_cxh"
+description = "Nodes:Ood_hd_CXH, Ood_hd_CXH. [a/OOTDiffusion](https://github.com/levihsu/OOTDiffusion)"
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118", "# torch==2.0.1", "# torchvision==0.15.2", "numpy", "opencv-python", "pillow", "diffusers==0.26.0", "transformers", "accelerate", "matplotlib", "tqdm", "# gradio==4.16.0", "scipy", "onnxruntime", "scikit-image", "# RuntimeError: Ninja is required to load C++ extensions", "Ninja"]
+
+[project.urls]
+Repository = "https://github.com/StartHua/ComfyUI_OOTDiffusion_CXH"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI_OOTDiffusion_CXH"
+Icon = ""
